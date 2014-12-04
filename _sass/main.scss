@@ -413,13 +413,13 @@ pre {
 // ------------------------------
 
 .site-header {
-  margin-top: em($base-vertical-margin);
   margin-bottom: em($base-vertical-margin);
+  padding-top: em($base-vertical-margin);
   padding-bottom: em($base-vertical-margin);
   border-bottom: 1px solid $color-grey-light;
   @include breakpoint($breakpoint-medium) {
-    margin-top: em($base-vertical-margin * 3);
     margin-bottom: em($base-vertical-margin * 3);
+    padding-top: em($base-vertical-margin * 3);
     padding-bottom: em($base-vertical-margin * 3);
   }
 
@@ -432,7 +432,18 @@ pre {
 
     p {
       margin-bottom: 0;
+    }
+
+    .branding-title a {
+      color: $color-grey-dark;
       font-weight: bold;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: $color-blue;
+        text-decoration: underline;
+      }
     }
   }
 
