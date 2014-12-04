@@ -1,0 +1,11 @@
+# Site settings
+title: Type Heading
+email: elliot@ellio7.com
+description: A responsive typography tool for headings.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "ellioseven.github.io/type-heading" # the base hostname & protocol for your site
+twitter_username: ellioseven
+github_username:  ellioseven
+
+# Build settings
+markdown: redcarpet

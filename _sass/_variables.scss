@@ -1,0 +1,82 @@
+// Variables
+
+// Base Sizing
+// ------------------------------
+
+$base-font-size: 16px;
+$base-line-height: 24px;
+$blh: $base-line-height; // Shortcut
+$base-vertical-margin: $base-line-height * .75;
+$bvm: $base-vertical-margin; // Shortcut
+
+// Import functions needed through the stylesheet.
+@import "functions";
+
+// Colours
+// ------------------------------
+
+$color-blue: #08c;
+$color-grey-dark: #444;
+$color-grey-slate: #aaa;
+$color-grey-light: #ddd;
+$color-grey-white: #f9f9f9;
+$color-brand-primary: $color-blue;
+
+// Breakpoints
+// ------------------------------
+
+$breakpoint-medium: em(768px, 16px);
+$breakpoint-large: em(768px, 16px);
+
+// Typography
+// ------------------------------
+
+$type-font-family-body: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$type-font-family-display: $type-font-family-body;
+$type-font-family-mono: monospace;
+
+$type-anchor-font-color: $color-blue;
+$type-anchor-hover-font-color: $color-grey-dark;
+
+$th-headings: (
+  h1: (32px 42px, 36px 48px default 768px),
+  h2: (24px 32px, 28px 36px default 768px),
+  h3: (18px),
+  h4: (16px),
+  h5: (14px),
+  h6: (12px)
+  );
+
+$th-defaults: (
+  font-size: $base-font-size,
+  line-height: $base-line-height,
+  margin-top: $base-vertical-margin,
+  margin-bottom: $base-vertical-margin
+  );
+
+// Grid
+// ------------------------------
+
+$grid-container-padding: em(20px);
+
+// Susy Grid
+// http://susydocs.oddbird.net/en/latest/settings/
+
+$susy: (
+  columns: 12,
+  gutter-position: after,
+  global-box-sizing: border-box
+  );
+
+$susy-medium: (
+  container: em(600px) + ($grid-container-padding * 2)
+  );
+
+$susy-large: (
+  container: em(700px) + ($grid-container-padding * 2),
+  );
+
+// Selects
+// ------------------------------
+
+$select-form-text-inputs: unquote('input[type="text"],input[type="password"],input[type="date"],input[type="datetime"],input[type="datetime-local"],input[type="month"],input[type="week"],input[type="email"],input[type="number"],input[type="search"],input[type="tel"],input[type="time"],input[type="url"]');

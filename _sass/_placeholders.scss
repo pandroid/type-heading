@@ -1,0 +1,12 @@
+// Placeholders
+
+// Grid
+// ------------------------------
+
+%grid-container {
+  padding-left: $grid-container-padding;
+  padding-right: $grid-container-padding;
+  @include layout-with-layouts {
+    @include container;
+  }
+}
