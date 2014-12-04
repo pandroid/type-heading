@@ -39,7 +39,7 @@ $ gem install type-heading
 # Gemfile
 gem 'sass', '~> 3.4.7'
 gem 'compass', '~> 1.0.1'
-gem 'type-heading', '~> 0.0.beta.1'
+gem 'type-heading', '~> 0.0.7'
 {% endhighlight %}
 
 {% highlight ruby %}
