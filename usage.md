@@ -18,9 +18,9 @@ menu: true
 
 **Format:** `th-heading-get($heading, $breakpoint)`
 
-**$heading:** mixed | A heading map key or list (required). | [$th-headings]
+**$heading:** mixed | A heading map key or list (required). | `$th-headings`
 
-**$breakpoint:** number | A heading list breakpoint (optional). | [default:false|$th-headings]
+**$breakpoint:** number | A heading list breakpoint (optional). | `$th-headings`
 
 **Example:**
 
@@ -48,7 +48,7 @@ $th-headings: ( h1: (36px 42px 20px, 42px 48px 20px 768px) );
 
 **Format:** `th-heading-get-map($heading)`
 
-**$heading:** string | A heading map key (required). | [$th-headings]
+**$heading:** string | A heading map key (required). | `$th-headings`
 
 **Example:**
 
@@ -69,9 +69,9 @@ $th-headings: ( h1: (36px 42px 20px, 42px 48px 20px 768px) );
 
 **Format:** `@include th-heading($heading, $breakpoint)`
 
-**$heading:** string | A heading map key (required). | [$th-headings]
+**$heading:** string | A heading map key (required). | `$th-headings`
 
-**$breakpoint:** number | A heading list breakpoint (optional). | [default:false|$th-headings]
+**$breakpoint:** number | A heading list breakpoint (optional). | `$th-headings`
 
 **Example:**
 
@@ -119,7 +119,7 @@ h1 {
 
 **Format:** `@include th-headings($heading, $breakpoint)`
 
-**$heading:** string | A heading map key (required). | [$th-headings]
+**$heading:** string | A heading map key (required). | `$th-headings`
 
 **Example:**
 
@@ -163,11 +163,11 @@ h1 {
 
 **Format:** `th-property-get($heading, $property-name, $breakpoint)`
 
-**$heading:** mixed |  A heading map key or list (required). | [$th-headings]
+**$heading:** mixed |  A heading map key or list (required). | `$th-headings`
 
 **$property-name:** string | A heading property name (required).
 
-**$breakpoint:** number | A heading list breakpoint (optional). | [$th-headings]
+**$breakpoint:** number | A heading list breakpoint (optional). | `$th-headings`
 
 **Example:**
 
@@ -245,11 +245,11 @@ h1 {
 
 **Format:** `@include th-breakpoint-heading($heading, $breakpoint, $direction)`
 
-**$heading:** string | A heading map key (required). | [$th-headings]
+**$heading:** string | A heading map key (required). | `$th-headings`
 
-**$breakpoint:** number | A heading list breakpoint (required). | [$th-headings]
+**$breakpoint:** number | A heading list breakpoint (required). | `$th-headings`
 
-**$direction:** string | Media query direction (optional). | [default:min-width|max-width]
+**$direction:** string | Media query direction (optional). | `min-width`, `max-width`
 
 **Example:**
 
