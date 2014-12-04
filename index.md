@@ -43,4 +43,4 @@ Get up and running quickly with the [Getting Started Guide]({site.url}/getting-s
 
 ## Timeline
 
-**4.12.2014:** Initial beta build published
+**4.12.2014:** Initial beta alpha published
