@@ -119,4 +119,5 @@ h1 { @include th-heading(h1); }
 {% endhighlight %}
 
 Once you have managed to get started, you should take a closer look at available
-[variables]({site.url}/variables) and [how to use]({site.url}/usage) Type Heading.
+<a href="{{site.url}}/variables">variables</a> and <a href="{{site.url}}/usage">how 
+to use Type Heading</a>.

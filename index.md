@@ -37,7 +37,7 @@ h2 { @include th-headings(h2); }
 h3 { @include th-headings(h3); }
 {% endhighlight %}
 
-Get up and running quickly with the [Getting Started Guide]({site.url}/getting-started).
+Get up and running quickly with the [Getting Started Guide]({{site.url}}/getting-started).
 
 ---
 
