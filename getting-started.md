@@ -4,8 +4,8 @@ title: Getting Started
 permalink: /getting-started/
 menu: true
 ---
-Type Heading is available accross many sourcing platforms and is easy to include
-into your Sass.
+<p class="type-lede">Type Heading is available accross many sourcing platforms
+and is easy to include into your Sass.</p>
 
 ## Requirements
 
@@ -119,4 +119,4 @@ h1 { @include th-heading(h1); }
 {% endhighlight %}
 
 Once you have managed to get started, you should take a closer look at available
-[variables](/variables) and [how to use](usage) Type Heading.
+[variables]({site.url}/variables) and [how to use]({site.url}/usage) Type Heading.
