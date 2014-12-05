@@ -39,8 +39,8 @@ $type-anchor-font-color: $color-blue;
 $type-anchor-hover-font-color: $color-grey-dark;
 
 $th-headings: (
-  h1: (32px 42px, 36px 48px default 768px),
-  h2: (24px 32px, 28px 36px default 768px),
+  h1: (32px 2, 36px 2.25 default 768px),
+  h2: (24px 1.5, 28px 1.75 default 768px),
   h3: (18px),
   h4: (16px),
   h5: (14px),
@@ -49,7 +49,7 @@ $th-headings: (
 
 $th-defaults: (
   font-size: $base-font-size,
-  line-height: $base-line-height,
+  line-height: 1,
   margin-top: $base-vertical-margin,
   margin-bottom: $base-vertical-margin
   );

@@ -31,6 +31,47 @@
   font-weight: 700;
 }
 
+// @mixin th-heading
+//
+// Overrides type-heading's th-heading mixin.
+// http://ellioseven.github.io/type-heading/usage/
+// $heading - A heading map key (required).
+// $breakpoint - A heading list breakpoint (optional).
+// $base - The base to calculate ems from..0.0
+
+@mixin th-heading(
+  $heading,
+  $breakpoint: false,
+  $base: $base-font-size
+){
+  $heading: th-heading-get($heading, $breakpoint);
+  $margin-top: th-property-get($heading, margin-top, $breakpoint);
+  $margin-bottom: th-property-get($heading, margin-bottom, $breakpoint);
+  $font-size: th-property-get($heading, font-size, $breakpoint);
+  $line-height: th-property-get($heading, line-height, $breakpoint);
+  margin-top: em($margin-top, $font-size);
+  margin-bottom: em($margin-bottom, $font-size);
+  font-size: em($font-size, $base);
+  line-height: em($base-line-height * $line-height, $font-size);
+}
+
+// @mixin th-breakpoint-heading
+// 
+// Overrides type-heading's th-breakpoint-heading mixin
+// $heading - A heading map key or list (required).
+// $breakpoint - A heading list breakpoint (required).
+// $direction - Media query direction (optional).
+
+@mixin th-breakpoint-heading(
+  $heading,
+  $breakpoint,
+  $direction: min-width
+){
+  @media screen and (#{$direction}: #{em($breakpoint, 16px)}){
+    @include th-heading($heading, $breakpoint);
+  }
+}
+
 // Layout
 // ------------------------------
 
