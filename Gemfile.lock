@@ -86,7 +86,7 @@ GEM
       parslet (~> 1.5.0)
     toolkit (2.6.0)
       sass (~> 3.3)
-    type-heading (0.0.8)
+    type-heading (0.0.9)
       compass (>= 1.0.1)
     yajl-ruby (1.1.0)
 
