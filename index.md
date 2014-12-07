@@ -16,25 +16,52 @@ accross multiple breakpoints.
 
 ## Get Started With Type Heading
 
-It's easy and is designed to make you life easier:
+Type Heading is built to be as easy as possible:
+
+### Sass Input
 
 {% highlight sass %}
 $th-headings: ( 
-  h1: (32px 42px, 36px 48px 20px 768px),
-  h2: (24px 32px, 30px 38px 20px 768px),
-  h3: (18, 24px)
+  h1: (32px 42px, 36px 48px 30px 768px),
+  h2: (24px 32px),
 );
 
 $th-defaults: (
-  font-size: $base-font-size,
-  line-height: $base-line-height,
-  margin-top: $base-vertical-margin,
-  margin-bottom: $base-vertical-margin
-);
+  font-size: 16px,
+  line-height: 24px,
+  margin-top: 20px,
+  margin-bottom: 20px
+  );
 
 h1 { @include th-headings(h1); }
 h2 { @include th-headings(h2); }
-h3 { @include th-headings(h3); }
+{% endhighlight %}
+
+### Compiles to:
+
+{% highlight sass %}
+h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 32px;
+  line-height: 42px;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
 {% endhighlight %}
 
 Get up and running quickly with the [Getting Started Guide]({{site.url}}/getting-started).
