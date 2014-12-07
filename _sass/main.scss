@@ -28,12 +28,6 @@
 
 @include establish-baseline;
 
-html {
-  @include breakpoint(max-width $breakpoint-medium) {
-    font-size: 100%;
-  }
-}
-
 body {
   color: $color-grey-dark;
   font-family: $type-font-family-body;
