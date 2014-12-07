@@ -11,7 +11,7 @@ group :development do
   gem 'breakpoint'              # Manages CSS media queries.
   gem 'type-heading'            # Responsive typography headings.
   gem 'yajl-ruby'               # Faster JSON with LiveReload in the browser.
-  gem 'jekyll'
+  gem 'jekyll'                  # A static site generator.
 
   # Dependency to prevent polling. Setup for multiple OS environments.
   gem 'rb-fsevent', :require => false                # Mac OSX
