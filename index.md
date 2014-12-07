@@ -70,4 +70,5 @@ Get up and running quickly with the [Getting Started Guide]({{site.url}}/getting
 
 ## Timeline
 
+**5.12.2014:** 0.0.9 released - <a href="{{site.url}}/change-log">Change Log</a>
 **4.12.2014:** Initial alpha published
