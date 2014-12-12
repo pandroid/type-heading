@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Type Heading - ALPHA
+title: Type Heading - Alpha
 permalink: /
 ---
 [![Gem Version](https://badge.fury.io/rb/type-heading.svg)](http://badge.fury.io/rb/type-heading)
@@ -11,6 +11,14 @@ Type Heading is a lightweight tool that lets you easily control heading sizing
 accross multiple breakpoints.
 
 <a href="https://github.com/ellioseven/type-heading" class="button">View on Github</a>
+
+---
+
+<div class="info">
+Type heading is currently in <a href="http://en.wikipedia.org/wiki/Software_release_life_cycle#Alpha">Alpha</a>.
+Currently, Type Heading should only be used for testing and/or development, not
+production work.
+</div>
 
 ---
 
