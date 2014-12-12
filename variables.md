@@ -4,7 +4,6 @@ title: Variables
 permalink: /variables/
 menu: true
 ---
----
 #### $th-headings
 
 **Type:** Map
@@ -15,7 +14,6 @@ menu: true
 
 {% highlight sass %}
 // Define heading maps, lists and property values
-
 $th-headings: (
   h1: (30px 38px),
   h2: (24px 30px),
@@ -45,7 +43,6 @@ Specify a heading list at a breakpoint:
 
 {% highlight sass %}
 // Specify a heading list at a breakpoint
-
 $th-headings: ( h1: (30px 38px, 42px 50px 768px) );
 {% endhighlight %}
 
@@ -55,7 +52,6 @@ A heading's margin top and bottom can be defined together by a single number val
 
 {% highlight sass %}
 // Heading margin top and bottom number value
-
 $th-headings: ( h1: (30px 38px 20px) );
 {% endhighlight %}
 
@@ -63,7 +59,6 @@ A heading's margin top and bottom can also be defined individually by a list val
 
 {% highlight sass %}
 // Heading margin top and bottom list value
-
 $th-headings: ( h1: (30px 38px (10px 20px)) );
 {% endhighlight %}
 
@@ -71,13 +66,13 @@ $th-headings: ( h1: (30px 38px (10px 20px)) );
 
 Heading property values can be defined based on a default value in two ways:
 
-1. Not defining the property value:
+<span>1.</span> Not defining the property value:
 
 {% highlight sass %}
-// Default heading property values by exclusion
-
+// Define only some heading list property values
 $th-headings: ( h3: (18px) );
 
+// Define default heading property values
 $th-defaults: (
   font-size: 16px,
   line-height: 24px,
@@ -85,17 +80,18 @@ $th-defaults: (
   margin-bottom: 20px
   );
 
-// is the same as writing
+// This is the same as writing:
 // $th-headings: ( h3: (18px 24px (30px 20px)) );
+// line-height, margin-top and margin-bottom are taken from defaults.
 {% endhighlight %}
 
-2. Defining a property value with a `default` keyword:
+<span>2.</span> Defining a property value with a `default` keyword:
 
 {% highlight sass %}
-// Default heading property value with the default keyword
-
+// Define a heading list property value as default
 $th-headings: ( h3: (18px default (20px 10px)) );
 
+// Define default heading property values
 $th-defaults: (
   font-size: 16px,
   line-height: 24px,
@@ -103,27 +99,9 @@ $th-defaults: (
   margin-bottom: 20px
   );
 
-// is the same as writing
+// This is the same as writing:
 // $th-headings: ( h3: (18px 24px (20px 10px)) );
-{% endhighlight %}
-
-<div class="info">Be careful when defining a heading's margin top property value:</div>
-
-{% highlight sass %}
-// Margin bottom outputs as 22px
-$th-headings: ( h1: ( 32px, 42px 48px (20px,) 768px ) );
-$th-defaults: ( margin-bottom: 22px );
-@debug th-property-get(h1, margin-bottom, 768px);
-
-// Margin bottom outputs as 22px
-$th-headings: ( h1: ( 32px, 42px 48px (20px, default) 768px ) );
-$th-defaults: ( margin-top: 18px, margin-bottom: 22px );
-@debug th-property-get(h1, margin-bottom, 768px);
-
-// Margin bottom outputs as 20px
-$th-headings: ( h1: ( 32px, 42px 48px (20px) 768px ) );
-$th-defaults: ( margin-top: 18px, margin-bottom: 22px );
-@debug th-property-get(h1, margin-bottom, 768px);
+// line-height is taken from defaults.
 {% endhighlight %}
 
 ---
@@ -137,8 +115,7 @@ $th-defaults: ( margin-top: 18px, margin-bottom: 22px );
 **Example:**
 
 {% highlight sass %}
-// Define default heading property values.
-
+// Define default heading property values
 $th-defaults: (
   font-size: 16px,
   line-height: 24px,

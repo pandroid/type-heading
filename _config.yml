@@ -6,6 +6,11 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://ellioseven.github.io/type-heading" # the base hostname & protocol for your site
 twitter_username: ellioseven
 github_username:  ellioseven
+exclude: [
+	'config.rb',
+	'Gemfile',
+	'Gemfile.lock'
+]
 
 # Build settings
 markdown: redcarpet

@@ -18,7 +18,7 @@ accross multiple breakpoints.
 
 Type Heading is built to be as easy as possible:
 
-### Sass Input
+### Sass Input:
 
 {% highlight sass %}
 $th-headings: ( 
@@ -70,5 +70,6 @@ Get up and running quickly with the [Getting Started Guide]({{site.url}}/getting
 
 ## Timeline
 
-* **5.12.2014:** 0.0.9 released - <a href="{{site.url}}/change-log">Change Log</a>
-* **4.12.2014:** Initial alpha published
+* **12.12.2014:** 0.0.10 released - <a href="{{site.url}}/change-log">Change Log</a>
+* **05.12.2014:** 0.0.9 released - <a href="{{site.url}}/change-log">Change Log</a>
+* **04.12.2014:** Initial alpha published
