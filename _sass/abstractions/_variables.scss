@@ -3,11 +3,9 @@
 // Base Sizing
 // ------------------------------
 
-$base-font-size: 16px;
-$base-line-height: 24px;
-$blh: $base-line-height; // Shortcut
-$base-vertical-margin: $base-line-height * .75;
-$bvm: $base-vertical-margin; // Shortcut
+$base-font-size: 21px;
+$base-line-height: 30px;
+$base-vertical-margin: $base-line-height;
 
 // Import functions needed through the stylesheet.
 @import "functions";
@@ -16,43 +14,31 @@ $bvm: $base-vertical-margin; // Shortcut
 // ------------------------------
 
 $color-blue: #08c;
-$color-grey-dark: #444;
-$color-grey-slate: #aaa;
+$color-grey-dark: #222;
+$color-grey-slate: #989898;
 $color-grey-light: #ddd;
 $color-grey-white: #f9f9f9;
-$color-brand-primary: $color-blue;
+$color-brand-primary: #6A9FB5;
 
 // Breakpoints
 // ------------------------------
 
 $breakpoint-medium: em(768px, 16px);
-$breakpoint-large: em(768px, 16px);
+$breakpoint-medium-below: em(767px, 16px);
+$breakpoint-large: em(1024px, 16px);
+$breakpoint-large-below: em(1023px, 16px);
+$breakpoint-large-x: em(1200, 16px);
+$breakpoint-large-x-below: em(1199, 16px);
 
 // Typography
 // ------------------------------
 
-$type-font-family-body: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$type-font-family-body: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $type-font-family-display: $type-font-family-body;
-$type-font-family-mono: monospace;
+$type-font-family-mono: menlo, monospace;
 
 $type-anchor-font-color: $color-blue;
 $type-anchor-hover-font-color: $color-grey-dark;
-
-$th-headings: (
-  h1: (32px 2, 36px 2.25 default 768px),
-  h2: (24px 1.5, 28px 1.75 default 768px),
-  h3: (18px),
-  h4: (16px),
-  h5: (14px),
-  h6: (12px)
-  );
-
-$th-defaults: (
-  font-size: $base-font-size,
-  line-height: 1,
-  margin-top: $base-vertical-margin,
-  margin-bottom: $base-vertical-margin
-  );
 
 // Grid
 // ------------------------------
@@ -66,15 +52,13 @@ $susy: (
   columns: 12,
   gutter-position: after,
   global-box-sizing: border-box
-  );
+);
 
 $susy-medium: (
-  container: em(600px) + ($grid-container-padding * 2)
-  );
+  container: 640px
+);
 
-$susy-large: (
-  container: em(700px) + ($grid-container-padding * 2),
-  );
+$susy-large: ();
 
 // Selects
 // ------------------------------
