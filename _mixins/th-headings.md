@@ -1,7 +1,7 @@
 ---
 weight: 2
 name: 'th-headings'
-description: 'Output styles for a heading accross all breakpoints.'
+description: 'Output styles for a heading across all breakpoints.'
 since: '0.0.10'
 group: 'Heading'
 access: 'Public'
@@ -26,20 +26,29 @@ params: [
     default: '$th-base-font-size',
     options: false,
     required: false
+  ],
+  include: [
+    type: 'List',
+    description: 'Include only certain properties in the mixin output.',
+    default: false,
+    options: 'font-size | line-height | margin-top | margin-bottom',
+    required: false
   ]
 ]
 ---
-Output all h1 styles:
+**This feature requires the [Breakpoint gem](https://github.com/at-import/breakpoint)**
+
+Output all h1 styles across all breakpoints:
 
 {% highlight sass %}
 @include th-headings(h1)
 {% endhighlight %}
 
-Output all h1 styles with max width media queries:
+Output font-size and line-height h1 styles across all breakpoints:
 
 {% highlight sass %}
-@include th-headings(
-  $heading: h1,
-  $direction: max-width
+th-heading(
+    $heading: h1,
+    $include: (font-size line-height)
 )
 {% endhighlight %}
